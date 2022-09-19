@@ -1,3 +1,5 @@
+
+import DrawerMenu from "./drawerMenu";
 import GrassAndRoad from "./grassRoadSky";
 import Navbar from "./navbar";
 import RotatedSun from "./rotatedSun";
@@ -12,6 +14,7 @@ function App() {
       <Threes />
       <RotatedSun />
       <RubleButton />
+      <DrawerMenu />
     </div>
   );
 }

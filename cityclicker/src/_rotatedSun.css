@@ -1,9 +1,10 @@
-.rotated_rays {
+.container {
     position: relative;
     width: 100px;
     height: 100px;
     left: 800px;
     top: 0px;
+    z-index: 1;
 }
 
 .rotated_sun {

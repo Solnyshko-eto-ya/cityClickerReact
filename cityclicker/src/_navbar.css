@@ -5,31 +5,9 @@
     left: 0px;
     top: 0px;
     background-color: #317638;
-    z-index: 5;
+    z-index: 4;
     box-shadow: 0 10px 10px -6px rgba(0, 0, 0, .25);
 }
-
-.buyHouse {
-    position: absolute;
-    width: 170px;
-    height: 50px;
-    left: 37px;
-    top: 14px;
-    font-size: 20px;
-    line-height: 50px;
-
-    border: 0;
-    background: #FFB11A;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-
-.buyHouse:active {
-    max-width: 169px;
-    max-height: 49px;
-}
-
-
 
 .scoreBoard {
     position: absolute;
@@ -59,4 +37,19 @@
     background: #FFFFFF;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.ant-drawer-content {
+    position: relative;
+    background: #FFB11A;
+}
+
+.closeButton {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    top: 200px;
+    left: 200px;
+    border-radius: 20px;
+    text-align: center;
 }

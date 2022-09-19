@@ -3,7 +3,7 @@ import './_rotatedSun.css'
 
 function RotatedSun() {
     return (
-        <div className='rotated_rays'><img src={require("./png/sun.png")} alt='' className='rotated_sun'></img></div>
+        <div className='container'><img src={require("./png/sun.png")} alt='' className='rotated_sun'></img></div>
 
     )
 }
