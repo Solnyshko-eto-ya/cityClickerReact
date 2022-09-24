@@ -1,14 +1,26 @@
-.cloudPictureContainer {
-
+.cloudMuvingContainer {
+    pointer-events: none;
+    user-select: none;
     position: relative;
-    width: 100px;
-    height: 100px;
-    left: 800px;
-    top: 0px;
+    top: -30px;
     z-index: 5;
+    overflow: hidden;
 }
 
-.pictureOfCloud {
+.pictureOfCloud1 {
+    object-fit: cover;
+    width: 100px;
+    height: 90px;
+    pointer-events: none;
+
+    animation-name: cloud-move;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translate(-1920px);
+}
+
+/* .pictureOfCloud2 {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -21,12 +33,53 @@
     transform: translate(-240px);
 }
 
+.pictureOfCloud3 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    animation-name: cloud-move;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translate(-240px);
+}
+
+.pictureOfCloud4 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    animation-name: cloud-move;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translate(-240px);
+}
+
+.pictureOfCloud5 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    animation-name: cloud-move;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translate(-240px);
+} */
+
+
+
 @keyframes cloud-move {
     0% {
-        transform: translate(-240px);
+        transform: translate(-150px);
     }
 
     100% {
-        transform: translate(240px);
+        transform: translate(1920px);
     }
 }

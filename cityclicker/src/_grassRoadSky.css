@@ -1,3 +1,7 @@
+body {
+    background-color: #69C9FF;
+}
+
 .grassOne {
     position: absolute;
     width: 1920px;
@@ -37,14 +41,12 @@
     background: #30682F;
 }
 
-.sky {
+.backgroundLandscape {
     position: absolute;
-    width: 1920px;
-    height: 440px;
-    left: 0px;
-    top: 80px;
-
-    background: #69C9FF;
+    width: 1280px;
+    height: 425px;
+    left: 33%;
+    top: 95px;
 }
 
 .stripe {
