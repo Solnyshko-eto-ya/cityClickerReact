@@ -67,7 +67,7 @@ function App() {
   const [suns, setSuns] = useState(10)
 
   const income = useMemo(() => {
-    return houses.reduce((acc, house) => acc + house.income * house.amount, 100000)
+    return houses.reduce((acc, house) => acc + house.income * house.amount, 0)
   }, [houses])
 
   useEffect(() => {
