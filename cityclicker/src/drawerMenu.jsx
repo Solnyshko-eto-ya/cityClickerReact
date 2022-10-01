@@ -9,6 +9,7 @@ import { AppContext } from './App'
 function House({ house }) {
 
     const { buyHouse, suns } = useContext(AppContext)
+
     return (
         <div>
             <div className='lot'>
@@ -24,7 +25,7 @@ function House({ house }) {
 
             </div>
             <div className='lotButtons'>
-                <button className='buyLot' disabled={suns < house.price} onClick={() => buyHouse(house.name)}>Купить!</button>
+                <button className='buyLot' disabled={suns <= house.price} onClick={() => buyHouse(house.name)}>Купить!</button>
             </div>
         </div>
 

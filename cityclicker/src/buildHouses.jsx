@@ -1,14 +1,22 @@
 import React from 'react'
+import './_buildHouses.css'
+import { AppContext } from './App'
+import { useContext } from 'react'
+import classNames from 'classnames'
+
+function House({ image, amount }) {
+    return (
+        <div className={classNames('house', { visible: amount })}>
+            <img src={image} alt="" />
+        </div>
+    )
+}
 
 function BuildHouses() {
+    const { houses } = useContext(AppContext)
     return (
-        <div>
-            <div className='house1'>{BuildHouses.image}</div>
-            <div className='house2'></div>
-            <div className='house3'></div>
-            <div className='house4'></div>
-            <div className='house5'></div>
-            <div className='house6'></div>
+        <div className='houseContainer'>
+            {houses.map(house => <House image={house.image} amount={house.amount} />)}
         </div>
     )
 }

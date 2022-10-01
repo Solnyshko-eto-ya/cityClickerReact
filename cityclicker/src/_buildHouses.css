@@ -1,0 +1,26 @@
+.houseContainer {
+    grid-template-columns: repeat(6, 200px);
+    column-gap: 100px;
+    display: grid;
+    height: 200px;
+    position: absolute;
+    top: 360px;
+    left: 100px;
+    z-index: 7;
+}
+
+[class^="build-"] {
+    display: grid;
+    place-items: center;
+}
+
+.house img {
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.house.visible img {
+    opacity: 1;
+}

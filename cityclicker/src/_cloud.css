@@ -3,83 +3,81 @@
     user-select: none;
     position: relative;
     top: -30px;
-    z-index: 5;
+    z-index: 6;
     overflow: hidden;
+    width: 100%;
 }
 
 .pictureOfCloud1 {
-    object-fit: cover;
+    top: 50px;
     width: 100px;
-    height: 90px;
-    pointer-events: none;
+    height: 100px;
 
-    animation-name: cloud-move;
-    animation-duration: 70s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: translate(-1920px);
+    animation: cloud1 50s infinite linear;
 }
 
-/* .pictureOfCloud2 {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+@keyframes cloud1 {
+    from {
+        transform: translate3d(-130px, 0, 0)
+    }
 
-    animation-name: cloud-move;
-    animation-duration: 70s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: translate(-240px);
+    to {
+        transform: translate3d(1900px, 0, 0)
+    }
+}
+
+.pictureOfCloud2 {
+    top: 100px;
+    width: 100px;
+    height: 100px;
+
+    animation: cloud2 100s infinite linear;
+}
+
+@keyframes cloud2 {
+    from {
+        transform: translate3d(-200px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(1900px, 0, 0)
+    }
 }
 
 .pictureOfCloud3 {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    top: 100px;
+    width: 100px;
+    height: 100px;
 
-    animation-name: cloud-move;
-    animation-duration: 70s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: translate(-240px);
+    animation: cloud3 100s infinite linear;
+    animation-direction: reverse;
+}
+
+@keyframes cloud3 {
+    from {
+        transform: translate3d(-210px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(1900px, 0, 0)
+    }
 }
 
 .pictureOfCloud4 {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    top: 100px;
+    width: 100px;
+    height: 100px;
 
-    animation-name: cloud-move;
-    animation-duration: 70s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: translate(-240px);
+    animation: cloud4 150s infinite linear;
+    animation-direction: reverse;
 }
 
-.pictureOfCloud5 {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-
-    animation-name: cloud-move;
-    animation-duration: 70s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: translate(-240px);
-} */
-
-
-
-@keyframes cloud-move {
-    0% {
-        transform: translate(-150px);
+@keyframes cloud4 {
+    from {
+        transform: translate3d(-210px, 0, 0)
     }
 
-    100% {
-        transform: translate(1920px);
+    to {
+        transform: translate3d(1900px, 0, 0)
     }
 }

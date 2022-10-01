@@ -8,7 +8,7 @@ function RubleButton() {
 
     return (
         <div>
-            <img src={require("./png/ruble.png")} alt='' className='ruble_button' onClick={() => setSuns(prev => prev + income)} />
+            <img src={require("./png/ruble.png")} alt='' className='ruble_button' onClick={() => setSuns(prev => prev + 1)} />
 
         </div>
     )

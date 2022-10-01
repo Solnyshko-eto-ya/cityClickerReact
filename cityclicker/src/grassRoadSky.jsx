@@ -4,7 +4,7 @@ import background from './png/mountains.jpg'
 
 function GrassAndRoad() {
     return (
-        <div>grassAndRoad
+        <div className='grassroadsky'>
             <div className='grassOne'></div>
             <div className='grassTwo'></div>
             <div className='road'></div>

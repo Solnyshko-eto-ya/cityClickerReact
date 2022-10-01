@@ -1,14 +1,22 @@
 import React from 'react'
 import './_cloud.css'
+import cloud from './png/cloud.png'
 
 function Cloud() {
     return (
         <div className='cloudMuvingContainer'>
-            <img src={require("./png/cloud.png")} alt='' className='pictureOfCloud1'></img>
-            {/* <img src={require("./png/cloud.png")} alt='' className='pictureOfCloud2'></img>
-<img src={require("./png/cloud.png")} alt='' className='pictureOfCloud3'></img>
-<img src={require("./png/cloud.png")} alt='' className='pictureOfCloud4'></img>
-<img src={require("./png/cloud.png")} alt='' className='pictureOfCloud5'></img> */}
+            <div>
+                <img src={cloud} alt='' className='pictureOfCloud1'></img>
+            </div>
+            <div>
+                <img src={cloud} alt='' className='pictureOfCloud2'></img>
+            </div>
+            <div>
+                <img src={cloud} alt='' className='pictureOfCloud3'></img>
+            </div>
+            <div>
+                <img src={cloud} alt='' className='pictureOfCloud4'></img>
+            </div>
         </div>
 
     )

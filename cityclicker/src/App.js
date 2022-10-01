@@ -21,42 +21,42 @@ const HOUSES = [{
   name: 'Общага',
   income: 10,
   amount: 0,
-  price: 10
+  price: 100
 },
 {
   image: build2,
   name: 'Многоквартирный дом',
   income: 100,
   amount: 0,
-  price: 100
+  price: 1000
 },
 {
   image: build3,
   name: 'Особняк',
-  income: 100,
+  income: 1000,
   amount: 0,
-  price: 100
+  price: 10000
 },
 {
   image: build4,
   name: 'Зеленый дом',
-  income: 100,
+  income: 10000,
   amount: 0,
-  price: 100
+  price: 100000
 },
 {
   image: build5,
   name: 'Частный дом',
-  income: 100,
+  income: 100000,
   amount: 0,
-  price: 100
+  price: 1000000
 },
 {
   image: build6,
   name: 'Дача Путина',
-  income: 100,
+  income: 1000000,
   amount: 0,
-  price: 100
+  price: 10000000
 }
 ]
 
@@ -67,7 +67,7 @@ function App() {
   const [suns, setSuns] = useState(10)
 
   const income = useMemo(() => {
-    return houses.reduce((acc, house) => acc + house.income * house.amount, 0)
+    return houses.reduce((acc, house) => acc + house.income * house.amount, 100000)
   }, [houses])
 
   useEffect(() => {
@@ -100,7 +100,7 @@ function App() {
       setSuns,
       houses,
       buyHouse,
-      income
+      income,
     }}>
       <div className="App">
         <Navbar />
